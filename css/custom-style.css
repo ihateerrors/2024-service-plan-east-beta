@@ -1,6 +1,7 @@
-.reg-bold {
+.reg-bold-text {
   font-weight: bold;
 }
+
 
 .position-container {
     position: relative;
@@ -1752,7 +1753,7 @@ text-decoration: underline !important;
    .bs-tooltip-bottom .arrow::before {
        border-bottom-color: #002e6d;
    }
-   
+ 
    .callout>h1:first-of-type,
    article.widget .callout>h1:first-of-type,
    #content .widget.widget-callout-widget>h1:first-of-type {
