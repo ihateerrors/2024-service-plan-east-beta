@@ -1242,7 +1242,10 @@ text-decoration: underline !important;
        top: 0;
    }
    
-   .timelinepage .timeline-wrapper .tl.now:after {
+
+   /* this controls how far the timeline extends above the current .tl  */
+   
+   /* .timelinepage .timeline-wrapper .tl.now:after {
        box-shadow: 0 0 0 4px #2a7997;
        left: -23.85px;
        background: white;
@@ -1250,8 +1253,8 @@ text-decoration: underline !important;
        height: 11px;
        width: 11px;
        content: "";
-       top: 7px;
-   }
+       top:7px;
+   } */
    
    .timelinepage .timeline-wrapper .tl:after {
        background: #2a7997
