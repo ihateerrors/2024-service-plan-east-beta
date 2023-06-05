@@ -561,6 +561,27 @@ $("#goal-network button.usa-button-unstyled").prepend('<img class="accordion-ico
             }); 
         });
     </script>
+    <script>
+
+        // This code will run when the page finishes loading
+    
+        window.onload = function() {
+    
+          // Reset the scroll position to the top of the page
+    
+          window.scrollTo(0, 0);
+    
+          // Disable scroll restoration
+    
+          if ('scrollRestoration' in history) {
+    
+            history.scrollRestoration = 'manual';
+    
+          }
+    
+        };
+    
+    </script>
 </body>
 
 
