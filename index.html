@@ -162,7 +162,7 @@ integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07j
                
                 <div id="layout-content" class="group">
                         <div id="layout-navigation" class="group">
-                            <progress id="progressbar" value="0" max="100"></progress>
+                            <progress aria-hidden="true" id="progressbar" value="0" max="100"></progress>
                             <div class="zone zone-navigation">
 <article class="widget-singlepage widget-navigation widget-menu-widget widget">
     
@@ -213,9 +213,8 @@ integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07j
 <p>The complete <a href="https://www.soundtransit.org/system-expansion/east-link-extension" target="_blank">East Link Extension</a> (2 Line) was originally scheduled to open in mid-2023 and the <a href="https://www.soundtransit.org/system-expansion/downtown-redmond-link-extension" target="_blank">Downtown Redmond Link Extension</a> was scheduled to open in 2024. Due to unforeseen construction quality issues, Sound Transit had to delay the schedule for both openings. The construction challenges are only impacting the segment along I-90 on the east and west sides of Lake Washington. Therefore, the segment between South Bellevue and Redmond Technology Stations will be completed in early 2024. </p>
 <p>The Sound Transit Board of Directors (Board) will review the proposal to open the East Link Starter Line in August and make their decision in October. If approved, riders could have access to this line in early 2024. The segment along I-90 is currently scheduled to be completed in spring 2025.</p>
 <figure class="text-center">
-    <a href="/img/Zoomed_ELSL_map.pdf" aria-label="click to expand image" target="_blank">
-         <img class="img-fluid" src="https://2024-serviceplan-east-beta.azurewebsites.net/img/Zoomed_ELSL_map.jpg" loading="lazy" alt="Full map of proposed Sound Transit service changes" />
-         Map showing proposed East Link Starter Line (2 Line) service | Click to enlarge</a>
+    <img class="img-fluid" src="https://2024-serviceplan-east-beta.azurewebsites.net/img/Zoomed_ELSL_map.jpg" loading="lazy" alt="Full map of proposed Sound Transit service changes" />
+    <a href="/img/Zoomed_ELSL_map.pdf" aria-label="click to expand image" target="_blank"> Map showing proposed East Link Starter Line (2 Line) service | Click to enlarge</a>
 </figure>
 <p></p>
 
@@ -544,6 +543,7 @@ $("#goal-network button.usa-button-unstyled").prepend('<img class="accordion-ico
                 $(this).attr("onmousedown", modalOnClick);
             });
         });
+
         var scrolledBy = [];
         var endOfPage = false;
         $(document).scroll(function(){
@@ -561,8 +561,10 @@ $("#goal-network button.usa-button-unstyled").prepend('<img class="accordion-ico
             }); 
         });
     </script>
-    <script>
 
+
+    <script>
+    
         // This code will run when the page finishes loading
     
         window.onload = function() {
