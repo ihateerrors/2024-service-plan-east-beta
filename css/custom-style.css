@@ -1,7 +1,11 @@
 .reg-bold-text {
   font-weight: bold;
 }
-
+.disabled-link,
+ .disabled-link:hover {
+  color:rgba(0, 0, 0, .50);
+  cursor: not-allowed;
+}
 
 .position-container {
     position: relative;
